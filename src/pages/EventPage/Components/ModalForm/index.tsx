@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import Modal from './styles';
-import CloseIcon from '../../../../assets/images/close-icon.png'
 import { Button, Input } from '../../../../components';
 import { InputDatePicker, SwitchButton } from '../../../../components/atoms';
 import { FormDataLesson, ListLessonData, ListSessionData } from '../../../../utils/types';
@@ -108,7 +107,6 @@ const ModalForm = ({
                     <Modal.TitleHeader>
                         {`Form Add ${type}`}
                     </Modal.TitleHeader>
-                    <Modal.IconClose src={CloseIcon} onClick={onClose}/>
                 </Modal.Header>
                 <Modal.Content>
                     <Modal.Form>
