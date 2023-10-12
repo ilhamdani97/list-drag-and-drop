@@ -7,6 +7,12 @@ const LabelCourses = {
         flex-direction: row;
         align-items: flex-end;
         gap: 16px;
+
+        @media (max-width: 500px) {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 8px;
+        };
     `,
     Title: styled.text`
         font-size: 32px;

@@ -13,6 +13,9 @@ const EmptyDatas = {
         border-radius: 8px;
         margin-right: 8px;
         margin-top: 16px;
+        @media (max-width: 500px) {
+            margin-right:${props => props.type === 'Session' ? '0px' : '8px'};
+        };
         padding: ${props => props.type === 'Session' ? '60px' : '8px'}
     `,
     TextEmpty: styled.text<{type: 'Lesson' | 'Session'}>`

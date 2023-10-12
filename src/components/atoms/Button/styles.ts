@@ -4,6 +4,7 @@ import colors from '../../../utils/colors';
 const Buttons = styled.button<{ variant?: 'primary' | 'secondary' | 'disable' | 'danger', mode: 'small' | 'default' }>`
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: row;
     gap: 8px;
     background-color: ${props => props.variant === 'primary' ? colors.purplePrimary: props.variant === 'secondary' ? 'transparent' : props.variant === 'danger' ? '#F44336' : colors.lightGray};

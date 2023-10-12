@@ -11,6 +11,9 @@ const Event = {
         background-color: ${colors.gray50};
         padding: 0px 40px;
         height: ${props => props.height}px;
+        @media (max-width: 500px) {
+            padding: 0px 16px;
+        };
     `,
     ContentButton: styled.div`
         display: flex;

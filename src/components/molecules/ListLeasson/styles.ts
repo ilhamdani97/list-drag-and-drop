@@ -18,6 +18,11 @@ const ListLeassons = {
             background-color: ${colors.gray100};
             transition-duration: 0.3s;
         };
+
+        @media (max-width: 500px) {
+            align-items: left;
+            overflow: scroll;
+        };
     `
 }
 

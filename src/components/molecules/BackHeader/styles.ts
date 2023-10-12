@@ -18,7 +18,10 @@ const BackHeaders = {
     LineGap: styled.div`
         height: 40px;
         width: 1px;
-        background-color: ${colors.text50}
+        background-color: ${colors.text50};
+        @media (max-width: 500px) {
+            height: 24px;
+        };
     `,
     TextHeader: styled.text`
         font-size: 18px;

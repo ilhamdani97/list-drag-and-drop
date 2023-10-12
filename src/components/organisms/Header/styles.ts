@@ -9,6 +9,10 @@ const Headers = {
         flex-direction: row;
         align-item: center;
         align-content: center;
+
+        @media (max-width: 500px) {
+            padding: 16px;
+        };
     `
 }
 
